@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <h1>Lista de Estudantes</h1>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Email</th>
+            <th>Ações</th>
+        </tr>
+        @foreach (var Logins in Model.Login)
+        {
+            <tr>
+                <td>@Logins.nome</td>
+                <td>@Logins.idade</td>
+                <td>@Logins.email</td>
+                <td>
+                    <form method="post" asp-page-handler="Delete" asp-route-id="@Logins.id">
+                        <button type="submit" onclick="return confirm('Tem certeza que deseja deletar este registro?');">
+                            Deletar
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
