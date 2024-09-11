@@ -15,18 +15,23 @@ public class IndexModel : PageModel
         _context = context;
     }
 
-    // Propriedade para armazenar a lista de estudantes.
+    // Propriedade para armazenar a lista de cadastro
     public IList<Logins> Login { get; set; }
 
-    // Método assíncrono chamado quando a página é acessada via GET.
-    public async Task OnGetAsync()
+    public async Task<IList<Logins>> GetLoginsAsync()
     {
-        // Carrega todos os estudantes do banco de dados.
-        Login = await _context.Logins.ToListAsync();
+        return await _context.Logins.ToListAsync();
+    }
+
+    // Método assíncrono chamado quando a página é acessada via GET.
+    public async Task OnGetAsync(IList<Logins> logins)
+    {
+        // Carrega todos os cadastros do banco de dados.
+        Login = logins;
     }
 
     // Método assíncrono chamado quando um formulário de adição é submetido.
-    public async Task<IActionResult> OnPostAddAsync(Logins newsteamdois)
+    public async Task<IActionResult> OnPostAddAsync(Logins newmostrasteam)
     {
         if (!ModelState.IsValid)
         {
@@ -35,7 +40,7 @@ public class IndexModel : PageModel
         }
 
         // Adiciona o novo estudante ao contexto do banco de dados.
-        _context.Logins.Add(newsteamdois);
+        _context.Logins.Add(newmostrasteam);
         await _context.SaveChangesAsync(); // Salva as mudanças no banco de dados.
 
         // Redireciona para a mesma página para refletir a adição.
@@ -46,12 +51,12 @@ public class IndexModel : PageModel
     public async Task<IActionResult> OnPostDeleteAsync(int id)
     {
         // Encontra o estudante pelo ID.
-        var steamdois = await _context.Logins.FindAsync(id);
+        var mostrasteam = await _context.Logins.FindAsync(id);
 
-        if (steamdois != null)
+        if (mostrasteam != null)
         {
             // Remove o estudante do contexto do banco de dados.
-            _context.Logins.Remove(steamdois);
+            _context.Logins.Remove(mostrasteam);
             await _context.SaveChangesAsync(); // Salva as mudanças no banco de dados.
         }
 

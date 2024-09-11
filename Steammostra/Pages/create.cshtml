@@ -1,25 +1,75 @@
 ﻿@page
 @model Steammostra.Pages.CreateModel
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>AcessTour</title>
-    <link rel="stylesheet" href="/css/site.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/create.css">
 </head>
 <body>
-    <h1>Adicionar Cadastro</h1>
-    <form method="post">
-        <label for="Nome">Nome:</label>
-        <input type="text" name="Nome" id="Nome" required /><br />
+    <div class="form-body">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
 
-        <label for="Idade">Idade:</label>
-        <input type="number" name="Idade" id="Idade" required /><br />
+                    <h3>Cadastro</h3>
+                    <p>Preencha os dados abaixo.</p>
+                    <form method="post">
+                        <label for="Nome">Nome:</label>
+                        <input type="text" name="Nome" id="Nome" required /><br />
 
-        <label for="Email">Email:</label>
-        <input type="email" name="Email" id="Email" required /><br />
+                        <label for="Idade">Idade:</label>
+                        <input type="number" name="Idade" id="Idade" required /><br />
 
-        <button type="submit">Adicionar</button>
-    </form>
+                        <label for="Email">Email:</label>
+                        <input type="email" name="Email" id="Email" required /><br />
+
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+            var isValid = true;
+
+            // Remove previous validation classes
+            document.querySelectorAll('.form-group').forEach(function (group) {
+                group.classList.remove('invalid');
+            });
+
+            // Get form fields
+            var name = document.getElementById('name');
+            var email = document.getElementById('email');
+            var age = document.getElementById('age');
+            var confirmData = document.getElementById('confirm-data');
+
+            // Validate name
+            if (!name.value.trim()) {
+                document.getElementById('nameGroup').classList.add('invalid');
+                isValid = false;
+            }
+            
+            if (!age.value.trim() || age.value <= 0) {
+                document.getElementById('ageGroup').classList.add('invalid');
+                isValid = false;
+            }
+
+            // Validate email
+            if (!email.value.trim() || !email.validity.valid) {
+                document.getElementById('emailGroup').classList.add('invalid');
+                isValid = false;
+            }
+
+            // If form is invalid, prevent submission
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
