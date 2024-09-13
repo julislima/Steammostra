@@ -28,6 +28,11 @@
 
                         <button type="submit">Adicionar</button>
                     </form>
+
+                    <!-- Link para a página inicial -->
+                    <div class="nav-link">
+                        <a href="/home">Voltar para a Home</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,7 +58,7 @@
                 document.getElementById('nameGroup').classList.add('invalid');
                 isValid = false;
             }
-            
+
             if (!age.value.trim() || age.value <= 0) {
                 document.getElementById('ageGroup').classList.add('invalid');
                 isValid = false;

@@ -155,6 +155,35 @@ select {
     outline: none;
 }
 
+.banner {
+    display: flex;
+    align-items: flex-end; /* Alinha os itens ao fundo do contêiner */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    height: 50vh; /* Definindo altura para visualizar o alinhamento ao fundo */
+}
+
+.banner__overlay {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Adiciona um fundo escuro semi-transparente para o container */
+}
+
+.banner__title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.banner__text {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color:white;
+}
+
 .footer {
     background-color: #d46a1a;
     color: #000000;
