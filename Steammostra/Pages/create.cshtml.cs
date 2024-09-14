@@ -23,7 +23,7 @@ namespace Steammostra.Pages
 
             _context.Logins.Add(Logins);
             _context.SaveChanges();
-            return RedirectToPage("./Index");
+            return RedirectToPage("./home");
         }
     }
 }
