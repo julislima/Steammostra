@@ -20,6 +20,36 @@ header {
     text-align: center;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    margin-top: 10px;
+}
+
+    .navbar img {
+        height: 50px;
+        margin-left: -250px
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        align-items: center;
+        margin-right: -250px;
+    }
+
+    .navbar a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+        .navbar a:hover {
+            color: #dad6d6;
+        }
 /* Estilo para o contêiner principal da página */
 .container {
     width: 80%;

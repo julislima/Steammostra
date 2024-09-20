@@ -7,30 +7,32 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    background-color: #f8f8f8;
-    border-bottom: 2px solid #ddd;
+    padding: 0 22px;
+    margin-top: 10px;
 }
 
-    .navbar img {
-        height: 50px;
-    }
+.navbar img {
+   height: 50px;
+    margin-left: -250px
+}
 
-    .navbar .nav-links {
-        display: flex;
-        align-items: center;
-    }
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  margin-right: -250px;
+}
 
-    .navbar a {
-        color: #000;
-        text-decoration: none;
-        padding: 14px 20px;
-        font-size: 16px;
-    }
+.navbar a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+ }
 
-        .navbar a:hover {
-            background-color: #ddd;
-        }
+.navbar a:hover {
+    color: #dad6d6;
+ }
 
 
 .banner {

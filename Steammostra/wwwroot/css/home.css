@@ -8,16 +8,18 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 22px;
-    background-color: #f8f8f8;
+    margin-top: 10px;
 }
 
     .navbar img {
         height: 50px;
+        margin-left: -250px
     }
 
     .navbar .nav-links {
         display: flex;
         align-items: center;
+        margin-right: -250px;
     }
 
     .navbar a {
@@ -53,18 +55,24 @@
     }
 
 .banner {
-    width: 100%;
-    height: 500px;
-    background-image: url('https://i.pinimg.com/564x/92/d2/8a/92d28af77ebebe8fc9a189d904ee0430.jpg');
+    width: 5080px;
+    height: 450px;
+    background-color:aqua;
     background-size: cover;
     background-position: center;
     margin-top: 30px;
+    margin-left: -300px
+}
+
+.banner .h1{
+width:62px;
+height: 138px;
 }
 
 .image-container {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 10px;
 }
 
     .image-container .image-box {
