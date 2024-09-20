@@ -5,71 +5,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="/css/create.css">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="~/css/create.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="form-body">
-        <div class="form-holder">
-            <div class="form-content">
-                <div class="form-items">
-
-                    <h3>Cadastro</h3>
-                    <p>Preencha os dados abaixo.</p>
-                    <form method="post">
-                        <label for="Nome">Nome:</label>
-                        <input type="text" name="Nome" id="Nome" required /><br />
-
-                        <label for="Idade">Idade:</label>
-                        <input type="number" name="Idade" id="Idade" required /><br />
-
-                        <label for="Email">Email:</label>
-                        <input type="email" name="Email" id="Email" required /><br />
-
-                        <button type="submit">Cadastro </button>
-                    </form>
-                </div>
+    <div class="container">
+        <h1 id="loginTitle">Login</h1>
+        <form id="loginForm" onsubmit="handleLogin(event)">
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <div class="social-icons">
+                <p>Ou entre com:</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-        </div>
+            <p>Não tem uma conta? <a href="#" id="showRegister">Cadastre-se</a></p>
+        </form>
+
+        <h1 id="registerTitle" style="display:none;">Cadastro</h1>
+        <form id="registerForm" style="display:none;" onsubmit="handleRegister(event)">
+            <input type="text" placeholder="Usuário" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Cadastrar</button>
+            <div class="social-icons">
+                <p>Ou cadastre-se com:</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>Já tem uma conta? <a href="#" id="showLogin">Login</a></p>
+        </form>
     </div>
 
     <script>
-        document.getElementById('registrationForm').addEventListener('submit', function (event) {
-            var isValid = true;
+        const loginForm = document.getElementById('loginForm');
+        const registerForm = document.getElementById('registerForm');
+        const showRegister = document.getElementById('showRegister');
+        const showLogin = document.getElementById('showLogin');
+        const loginTitle = document.getElementById('loginTitle');
+        const registerTitle = document.getElementById('registerTitle');
 
-            // Remove previous validation classes
-            document.querySelectorAll('.form-group').forEach(function (group) {
-                group.classList.remove('invalid');
-            });
-
-            // Get form fields
-            var name = document.getElementById('name');
-            var email = document.getElementById('email');
-            var age = document.getElementById('age');
-            var confirmData = document.getElementById('confirm-data');
-
-            // Validate name
-            if (!name.value.trim()) {
-                document.getElementById('nameGroup').classList.add('invalid');
-                isValid = false;
-            }
-
-            if (!age.value.trim() || age.value <= 0) {
-                document.getElementById('ageGroup').classList.add('invalid');
-                isValid = false;
-            }
-
-            // Validate email
-            if (!email.value.trim() || !email.validity.valid) {
-                document.getElementById('emailGroup').classList.add('invalid');
-                isValid = false;
-            }
-
-            // If form is invalid, prevent submission
-            if (!isValid) {
-                event.preventDefault();
-            }
+        showRegister.addEventListener('click', function (event) {
+            event.preventDefault();
+            loginForm.style.display = 'none';
+            registerForm.style.display = 'block';
+            loginTitle.style.display = 'none';
+            registerTitle.style.display = 'block';
         });
+
+        showLogin.addEventListener('click', function (event) {
+            event.preventDefault();
+            registerForm.style.display = 'none';
+            loginForm.style.display = 'block';
+            registerTitle.style.display = 'none';
+            loginTitle.style.display = 'block';
+        });
+
+        function handleLogin(event) {
+            event.preventDefault();
+            if (loginForm.checkValidity()) {
+                location.href = '/home'; // Corrigido para a rota
+            }
+        }
+
+        function handleRegister(event) {
+            event.preventDefault();
+            if (registerForm.checkValidity()) {
+                location.href = '/home'; // Corrigido para a rota
+            }
+        }
     </script>
 </body>
 </html>
