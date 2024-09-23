@@ -1,23 +1,9 @@
-/* Reset básico para garantir uma aparência consistente */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo para o corpo da página */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
-}
-
-/* Estilo para o cabeçalho */
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
 }
 
 .navbar {
@@ -50,69 +36,67 @@ header {
         .navbar a:hover {
             color: #dad6d6;
         }
-/* Estilo para o contêiner principal da página */
 .container {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para o título dentro do contêiner */
-.container h2 {
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 1.5em;
-}
-
-/* Estilo para o formulário */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Estilo para os rótulos (labels) */
-label {
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Estilo para os campos de entrada */
-input[type="text"],
-input[type="email"],
-textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Estilo para o botão de envio */
-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: #333;
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Estilo para o rodapé */
-footer {
-    background-color: #333;
-    color: white;
+h1 {
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    color: #333;
+}
+
+.contact-info, .contact-form, .social-media {
+    margin: 20px 0;
+}
+
+    .contact-info p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        .contact-form button:hover {
+            background-color: #218838;
+        }
+
+    .social-media a {
+        display: inline-block;
+        margin-right: 10px;
+        text-decoration: none;
+        color: #007bff;
+        font-size: 18px;
+    }
+
+        .social-media a:hover {
+            color: #0056b3;
+        }
+
+
+footer {
+    background-color: #201D14;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 28px;
 }

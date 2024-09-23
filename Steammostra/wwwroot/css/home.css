@@ -49,25 +49,43 @@
     text-align: center;
     margin-left: 20px;
 }
-
     .login-button:hover {
         background-color: #b2bd56;
     }
 
+.text-background {
+   color: white;
+}
+
+ .text-background .h1 .h3 {
+  position: relative;
+  left: -200px; /* Move para a direita */
+  top: 50px; /* Move para baixo */
+}
+
+
+
+.banner-image {
+    display: flex;
+    position: absolute;
+    width: 380px;
+    height: auto;
+    margin-left: 1400px;
+    margin-top: -80px;
+}
+
+
+/* NAO MEXER        */
 .banner {
-    width: 5080px;
+    width: 1890px;
     height: 450px;
-    background-color:aqua;
+    background-color: #2D83B6;
     background-size: cover;
     background-position: center;
     margin-top: 30px;
     margin-left: -300px
 }
 
-.banner .h1{
-width:62px;
-height: 138px;
-}
 
 .image-container {
     display: flex;

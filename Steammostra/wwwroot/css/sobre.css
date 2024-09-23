@@ -6,59 +6,23 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 22px;
-    background-color: #f8f8f8;
+    margin-top: 10px;
 }
 
     .navbar img {
         height: 50px;
+        margin-left: -250px
     }
 
     .navbar .nav-links {
         display: flex;
         align-items: center;
-    }
-
-    .navbar a {
-        display: block;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-    }
-
-        .navbar a:hover {
-            color: #dad6d6;
-        }
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-
-
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 22px;
-    background-color: #f8f8f8;
-}
-
-    .navbar img {
-        height: 50px;
-    }
-
-    .navbar .nav-links {
-        display: flex;
-        align-items: center;
+        margin-right: -250px;
     }
 
     .navbar a {
@@ -83,6 +47,13 @@ body {
     align-items: center;
     justify-content: center;
     color: #fff;
+    width: 2110px;
+    height: 450px;
+    background-color: aqua;
+    margin-top: 30px;
+
+    margin-top: 30px;
+    margin-left: -300px
 }
 
     #about-banner .banner-content {
@@ -113,7 +84,7 @@ body {
 /* Subtítulo */
 #about-subtitle {
     padding: 2rem;
-    background-color: #f9f9f9;
+    
 }
 
     #about-subtitle .container {
