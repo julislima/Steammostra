@@ -1,62 +1,141 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
 
-/* Estilo para o corpo da página */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
 }
 
-/* Estilo para o cabeçalho */
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    background-color: #f8f8f8;
 }
 
-/* Estilo para o contêiner principal da página */
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+    .navbar img {
+        height: 50px;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+        .navbar a:hover {
+            color: #dad6d6;
+        }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Estilo para o conteúdo principal */
-.content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    background-color: #f8f8f8;
 }
 
-/* Estilo para os títulos dentro do conteúdo */
-.content h2 {
-    color: #333;
-    margin-bottom: 15px;
-    font-size: 1.5em;
+    .navbar img {
+        height: 50px;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+        .navbar a:hover {
+            color: #dad6d6;
+        }
+
+/* Banner */
+#about-banner {
+    background-image: url('https://img.freepik.com/fotos-gratis/casal-de-idosos-morando-em-nova-york_23-2150820134.jpg?t=st=1725656284~exp=1725659884~hmac=d85eebf232a13204adcbc52a649510eb8f7e6b28fe3cd96f821c3f512d7deaef&w=1480');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 
-/* Estilo para os parágrafos dentro do conteúdo */
-.content p {
-    margin-bottom: 20px;
-    color: #666;
-    font-size: 1em;
+    #about-banner .banner-content {
+        text-align: center;
+    }
+
+    #about-banner h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+/* Texto sobre nós */
+#about-text {
+    padding: 2rem;
+    background-color: #fff;
 }
 
-/* Estilo para o rodapé */
+    #about-text .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #about-text p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+/* Subtítulo */
+#about-subtitle {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+    #about-subtitle .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #about-subtitle h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #about-subtitle p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+/* Rodapé */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #201D14;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem;
+    margin-top: 28px;
 }
-
