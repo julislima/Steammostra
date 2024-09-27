@@ -53,27 +53,53 @@
         background-color: #b2bd56;
     }
 
-.text-background {
-   color: white;
+.banner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    height: 800px;
+    padding: 20px;
 }
-
- .text-background .h1 .h3 {
-  position: relative;
-  left: -200px; /* Move para a direita */
-  top: 50px; /* Move para baixo */
-}
-
-
 
 .banner-image {
     display: flex;
-    position: absolute;
-    width: 380px;
-    height: auto;
-    margin-left: 1400px;
-    margin-top: -80px;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Para manter a hierarquia de elementos */
+    z-index: 2; /* Garante que o texto esteja acima da imagem */
+    margin-left: 900px;
+    margin-top: -300px;
 }
 
+.text-background {
+    color: white;
+    margin-right: 1200px;
+    padding: 20px;
+    margin-left: 60px;
+    margin-top: 40px; 
+}
+
+    .text-background img.banner-image {
+        display
+        width: 350px;
+        height: auto;
+        margin-left: 1370px;
+        margin-bottom: -150px;
+    }
+
+
+}
+
+  .text-background .banner-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative; /* Para manter a hierarquia de elementos */
+        z-index: 2; /* Garante que o texto esteja acima da imagem */
+        margin-left: 1370px;
+        margin-top: -90px;
+ }
 
 /* NAO MEXER        */
 .banner {

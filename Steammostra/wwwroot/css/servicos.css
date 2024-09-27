@@ -35,28 +35,32 @@
         }
 
 .banner {
-    width: 100%;
-    height: 300px;
-    background-image: url('https://img.freepik.com/fotos-gratis/as-pessoas-andam-na-praia-de-ouro-com-palmeiras-antes-da-agua-turquesa_1304-5400.jpg?t=st=1725914631~exp=1725918231~hmac=4c06a70efa6e45651fc5ca43d71d531831b02f060116bb69dcee0fc0539a8b37&w=826');
+    width: 1890px;
+    height: 450px;
+    background-color: #2D83B6;
     background-size: cover;
     background-position: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+    margin-top: 30px;
+    margin-left: -300px
 }
 
+
     .banner h1 {
-        font-size: 2.5em;
+        color: white;
+        display: flex;
+        font-size: 3.5em;
+        justify-content: center;
+        padding-top: 145px;
         margin: 0;
+        font-weight: 700;
     }
 
     .banner p {
-        font-size: 1.2em;
+        color: white;
+        display: flex;
+        font-size: 2.2em;
         margin: 10px 0 0;
+        justify-content: center;
     }
 
 .content {
