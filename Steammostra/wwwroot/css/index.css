@@ -11,7 +11,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url('https://img.freepik.com/fotos-gratis/mulher-de-frente-a-divertir-se-ao-ar-livre_23-2150725833.jpg?t=st=1725037124~exp=1725040724~hmac=7d478091a5c3ad3b007a78992b2a15f10ed4828e081f9c6d864810131399912a&w=1380');
+    background-image: url('https://img.freepik.com/fotos-gratis/mulher-de-tiro-medio-a-divertir-se-na-cidade_23-2150725741.jpg?w=1380&t=st=1727466758~exp=1727467358~hmac=608d36c61c3b8ccc792a6575abc3fdd22499067bb8b6ba11a17b4000a0dd843d');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -182,13 +182,14 @@ select {
     margin-bottom: 30px;
     font-weight: 300;
     color:white;
+    outline:none;
 }
 
 .footer {
-    background-color: #d46a1a;
-    color: #000000;
+    background-color: #fff;
+    color: #fff;
     text-align: center;
-    padding: 15px;
+    padding: 1px;
     position: relative;
     bottom: 0;
     width: 100%;
