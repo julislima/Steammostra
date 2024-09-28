@@ -74,8 +74,9 @@
 
 .text-background, .h1{
 position: relative;
-font-size: 30px;
-
+font-size: 50px;
+left:60px;
+top:150px;
 }
 
 
@@ -86,8 +87,8 @@ font-size: 30px;
         z-index: 2; 
         width: 380px;
         margin-left: 1370px;
-        margin-right: 200px;
-        margin-top: -150px;
+        margin-right: 250px;
+        top:-210px;
  }
 
 
@@ -135,3 +136,26 @@ font-size: 30px;
     bottom: 0;
     width: 100%;
 }
+
+
+.banner .button-container {
+    position: absolute;
+    top: 120px;
+    right: -90px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+    .banner .button-container button {
+        background-color: transparent;
+        color: #ffffff;
+        border: 2px solid #ffffff; /* Cor da borda */
+        border-radius: 5px;
+        padding: 15px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: all 0.3s ease;
+        outline: none;
+    }

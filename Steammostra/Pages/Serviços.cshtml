@@ -16,7 +16,6 @@
                 <a href="/home">Inicio</a>
                 <a href="/sobre">Sobre</a>
                 <a href="/Serviços">Serviços</a>
-                <a href="/contato">Contato</a>
             </div>
         </div>
         <div class="banner">
@@ -51,52 +50,8 @@
             </div>
 
 
-            <div class="carousel">
-                <div class="carousel-images">
-                    <div class="carousel-image"><img src="gestão-de-pessoas-.jpg" alt="Tour 1"></div>
-                    <div class="carousel-image"><img src="gestão-de-pessoas-.jpg" alt="Tour 2"></div>
-                    <div class="carousel-image"><img src="gestão-de-pessoas-.jpg" alt="Tour 3"></div>
-                </div>
-                <button class="carousel-button prev">&#10094;</button>
-                <button class="carousel-button next">&#10095;</button>
-            </div>
 
-            <div class="testimonials">
-                <h3>Depoimentos</h3>
-                <p>"Foi uma experiência incrível! Os guias foram extremamente atenciosos e adaptaram tudo às minhas necessidades." - João Silva</p>
-                <p>"A acessibilidade foi excelente e a equipe fez um ótimo trabalho em tornar a visita agradável e sem estresse." - Maria Oliveira</p>
-            </div>
-
-            <div class="contact-form">
-            <h2>Deixe seu comentário</h2>
-                <form action="#" method="post">
-                    <input type="text" name="name" placeholder="Seu Nome" required>
-                    <input type="email" name="email" placeholder="Seu E-mail" required>
-                    <textarea name="message" rows="4" placeholder="Deixe o seu comentário!" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </div>
-
-      
-
-        <script>
-            const prevButton = document.querySelector('.carousel-button.prev');
-            const nextButton = document.querySelector('.carousel-button.next');
-            const carouselImages = document.querySelector('.carousel-images');
-            let index = 0;
-
-            function showImage(newIndex) {
-                const totalImages = document.querySelectorAll('.carousel-image').length;
-                if (newIndex >= totalImages) index = 0;
-                else if (newIndex < 0) index = totalImages - 1;
-                else index = newIndex;
-                carouselImages.style.transform = `translateX(-${index * 100}%)`;
-            }
-
-            prevButton.addEventListener('click', () => showImage(index - 1));
-            nextButton.addEventListener('click', () => showImage(index + 1));
-        </script>
+  
     </body>
     </html>
 
