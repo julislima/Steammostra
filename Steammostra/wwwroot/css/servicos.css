@@ -139,53 +139,6 @@
         background-color: rgba(0, 0, 0, 0.8);
     }
 
-.testimonials {
-    color: white;
-    background-color: #2D83B6;
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    text-align: center;
-    margin-bottom: 60px; /* Espaço abaixo de cada elemento */
- 
-}
-
-    .testimonials h3 {
-        margin-top: 0;
-    }
-
-.contact-form {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 120px; /* Espaço abaixo de cada elemento */
-}
-
-    .contact-form input, .contact-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
-
-    .contact-form button {
-        background-color: #daa37f;
-        color: #fff;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-
-        .contact-form button:hover {
-            background-color: #b2bd56;
-        }
 
 .card-container {
     display: flex;

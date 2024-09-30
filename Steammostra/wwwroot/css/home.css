@@ -1,6 +1,6 @@
 ﻿body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -72,11 +72,13 @@
  
 }
 
-.text-background, .h1{
-position: relative;
-font-size: 50px;
-left:60px;
-top:150px;
+.text-background {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    font-size: 50px;
+    left: 60px;
+    top: 150px;
+    font-weight: 600;
 }
 
 
@@ -158,4 +160,13 @@ top:150px;
         margin-top: 20px;
         transition: all 0.3s ease;
         outline: none;
+
     }
+
+
+.banner,.help{
+position: relative;
+justify-content: end;
+color: white;
+
+}
