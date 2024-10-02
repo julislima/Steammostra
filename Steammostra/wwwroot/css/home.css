@@ -163,10 +163,24 @@
 
     }
 
+.banner-help {
+    display: flex;
+    margin: 0;
+    max-width: 1890px;
+    height: 350px;
+    background-color: #2D83B6;
+    background-position: center;
+    margin-top: 10px;
+    margin-left: -300px;
+    margin-right: -300px;
+    margin-top: -15px;
+}
 
-.banner,.help{
+.banner-help,.help{
 position: relative;
 justify-content: end;
 color: white;
+padding-top: 40px;
+padding-right: 50px;
 
 }
