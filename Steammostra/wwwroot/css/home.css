@@ -185,15 +185,24 @@
 
 
 .prox-viagem {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px; 
+    width: 100%; 
+    margin-bottom: 120px;
+    font-size: 25px;
     font-weight: bold;
-    margin-top: -15px;
-    width: 500px;
-    font-size: 40px;
+}
+
+.viagem-item {
+    margin: 0 20px;
+    justify-content: flex-start;
+    flex: 1;
+    margin-top: 70px;
 }
 
 .viagem-img {
-margin-top: 40px;
-width: 100%;
+    width: 100%; 
+    height: auto; 
 }
+
