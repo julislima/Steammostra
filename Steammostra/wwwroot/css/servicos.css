@@ -42,7 +42,7 @@
     background-position: center;
     margin-top: 30px;
     margin-left: -300px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
 
@@ -64,106 +64,121 @@
         justify-content: center;
     }
 
-
-.content {
-    padding: 20px;
+.services-title {
     text-align: center;
+    margin: 20px 0; /* Espaçamento acima e abaixo do título */
 }
 
-.services {
+/* Estilos para os cards */
+.cards-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-
-}
-
-    .services h2 {
-        margin: 20px 0;
-        font-weight: 600;
-    }
-
-.carousel {
-    position: relative;
-    max-width: 800px;
-    margin: 20px auto;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    background-color: #fff;
-    margin-bottom: 60px; 
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-image {
-    min-width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 80px; 
-}
-
-.carousel img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-50%);
-}
-
-    .carousel-button.prev {
-        left: 10px;
-    }
-
-    .carousel-button.next {
-        right: 10px;
-    }
-
-    .carousel-button:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-top: 10px;
+    justify-content: space-around; /* Espaçamento igual entre os cards */
+    padding: 20px;
 }
 
 .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #ffffff;
     border-radius: 10px;
-    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Largura do card */
+    text-align: center;
     padding: 20px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-     margin: 30px;
+    margin: 10px; /* Margem entre os cards */
 }
 
     .card h3 {
-        margin-top: 0;
+        margin-bottom: 10px; /* Espaçamento abaixo do título do card */
     }
 
+    .card button {
+        background-color: #2D83B6; /* Cor do botão */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .card button:hover {
+            background-color: #041620; /* Cor do botão ao passar o mouse */
+        }
+
+.experience-banner {
+    width: 1890px; /* Mesma largura que o banner */
+    height: 450px; /* Pode ajustar a altura conforme necessário */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D83B6; /* Mesma cor de fundo do banner */
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: -300px; /* Para manter a mesma posição */
+    color: white; /* Cor do texto */
+    margin-bottom: 30px;
+    border-radius: 10px; /* Para suavizar os cantos */
+}
+
+.experience-text {
+    flex: 1; /* Texto ocupa o espaço disponível */
+    padding: 20px;
+    margin-bottom: 240px;
+    font-size: 1.4em;
+    flex: 1;
+    margin-right: -80px;
+    position: relative;
+    right: 20px;
+    top: 112px; /* Aumenta para descer mais */
+}
+
+.form-container {
+    background: #ffffff; /* Fundo do formulário */
+    border-radius: 10px;
+    padding: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 100px 0;
+    flex: 1; /* Para ocupar o espaço restante */
+    position: relative;
+    margin-bottom: 120px;
+    height: 350px;
+}
+
+    .form-container h2 {
+        margin-bottom: 10px; /* Espaçamento abaixo do título do formulário */
+    }
+
+    .form-container input,
+    .form-container textarea {
+        width: 100%; /* Largura total do input */
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-container button {
+        background-color: #2D83B6; /* Cor do botão */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .form-container button:hover {
+            background-color: #1A5B7D; /* Cor do botão ao passar o mouse */
+        }
+
+
+.image-box {
+    width: 420px; /* Faz a imagem ocupar todo o espaço do contêiner */
+    position: relative;
+    right: -190px;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Suaviza os cantos da imagem */
+    top: 40px; /* Aumenta para descer mais */
+}
 
 .footer {
     background-color: #fff;

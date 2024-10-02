@@ -1,57 +1,66 @@
 ﻿@page
 @model Steammostra.Pages.CreateModel
 
-    <!DOCTYPE html>
-    <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Guias Turísticos Acessíveis</title>
-        <link rel="stylesheet" href="~/css/servicos.css" />
-    </head>
-    <body>
-        <div class="navbar">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guias Turísticos Acessíveis</title>
+    <link rel="stylesheet" href="~/css/servicos.css" />
+</head>
+<body>
+    <div class="navbar">
         <img src="~/imagens/LOGOOFC.png" alt="Logo">
-            <div class="nav-links">
-                <a href="/home">Inicio</a>
-                <a href="/sobre">Sobre</a>
-                <a href="/Serviços">Serviços</a>
-            </div>
+        <div class="nav-links">
+            <a href="/home">Inicio</a>
+            <a href="/sobre">Sobre</a>
+            <a href="/Serviços">Serviços</a>
         </div>
-        <div class="banner">
-            <h1>Descubra Nossos Guias Turísticos Acessíveis</h1>
-            <p>Explore um novo mundo com a acessibilidade que você merece!</p>
+    </div>
+    <div class="banner">
+        <h1>Descubra Nossos Guias Turísticos Acessíveis</h1>
+        <p>Explore um novo mundo com a acessibilidade que você merece!</p>
+    </div>
+
+    <div class="services-title">
+        <h2>Roteamento de Lugares</h2>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <h3>Locais para Deficientes Auditivos</h3>
+            <p>Descubra lugares que oferecem recursos visuais e sinalização para garantir uma experiência acessível e inclusiva.</p>
+            <a href="homepage.html"><button type="submit" class="play-button">Saiba Mais</button></a>
         </div>
+        <div class="card">
+            <h3>Locais para Deficientes Físicos</h3>
+            <p>Explore espaços adaptados com rampas, elevadores., proporcionando conforto e liberdade de movimentação.</p>
+            <a href="homepage.html"><button type="submit" class="play-button">Saiba Mais</button></a>
+        </div>
+        <div class="card">
+            <h3>Locais para Deficientes Visuais</h3>
+            <p>Encontre locais que oferecem descrições táteis e audioguias, tornando a exploração do ambiente mais rica e acessível.</p>
+            <a href="homepage.html"><button type="submit" class="play-button">Saiba Mais</button></a>
+        </div>
+    </div>
 
-        <div class="content">
-            <div class="services">
-                <h2>Serviços Oferecidos</h2>
-                <p>Oferecemos guias turísticos especializados em atender pessoas com diferentes tipos de deficiências. <br />
-                    Nossos guias são treinados para proporcionar uma experiência enriquecedora e inclusiva.</p>
-
-                <div class="card-container">
-                    <div class="card">
-                        <h3>Guias para Deficiência Visual</h3>
-                        <p>Guias especializados em fornecer descrições detalhadas dos pontos turísticos.</p>
-                            <button onclick="location.href='sua-pagina.html'" class="btn btn-primary">Saiba Mais</button>
-                    </div>
-                    <div class="card">
-                        <h3>Guias para Deficiência Auditiva</h3>
-                        <p>Guias que utilizam linguagem de sinais e oferecem materiais escritos.</p>
-                            <button onclick="location.href='sua-pagina.html'" class="btn btn-primary">Saiba Mais</button>
-
-                    </div>
-                    <div class="card">
-                        <h3>Experiências Personalizadas</h3>
-                        <p>Tours adaptados às necessidades específicas de cada visitante.</p>
-                            <button onclick="location.href='sua-pagina.html'" class="btn btn-primary">Saiba Mais</button>
-                    </div>
-                </div>
-            </div>
+    <div class="experience-banner">
+        <div class="experience-text">
+            <h2>Compartilhe suas experiências</h2>
+            <img class="image-box" src="~/imagens/feedback.png" alt="imagem de feedback">
+        </div>
+        <div class="form-container">
+            <form action="homepage.html" method="POST">
+                <input type="text" placeholder="Seu Nome" required />
+                <input type="email" placeholder="Seu E-mail" required />
+                <textarea placeholder="Compartilhe sua experiência..." rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
 
 
 
-  
-    </body>
-    </html>
+</body>
+</html>
 
