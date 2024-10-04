@@ -1,6 +1,10 @@
 ﻿body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remove as margens do body */
+    padding: 0; /* Remove o preenchimento do body */
+    width: 100%; /* Define a largura total */
+    box-sizing: border-box; /* Faz com que o padding e a borda sejam incluídos na largura total */
 }
 
 .navbar {
@@ -200,22 +204,26 @@
 }
 
 .lugares {
-    height: auto; 
+    max-width: 100%; /* A imagem não ultrapassa o contêiner */
+    height: auto;
 }
 
 .img1 {
-    width: 90%; 
+    width: 80%; 
 }
 
 .img2 {
-    width: 80%; 
+    width: 50%;
+    height: 350px;
     margin-left: 40px;
+    margin-top: 58px;
 }
 
 .img3 {
-    width: 70%; 
-    height: auto;
+    width: 30%; 
+    height: 300px;
     margin-left: 40px;
+    margin-top: 108px;
 }
 
 .lugares:not(:last-child) {
