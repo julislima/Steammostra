@@ -133,18 +133,18 @@
 
 .form-container {
     background: #ffffff; /* Fundo do formulário */
-    border-radius: 10px;
-    padding: 1px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0; /* Removido o arredondamento */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 100px 0;
-    flex: 1; /* Para ocupar o espaço restante */
-    position: relative;
-    margin-bottom: 120px;
-    height: 350px;
+    width: 400px; /* Largura fixa do formulário */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
 }
 
     .form-container h2 {
-        margin-bottom: 10px; /* Espaçamento abaixo do título do formulário */
+        margin-bottom: 20px; /* Espaçamento abaixo do título do formulário */
+        text-align: center; /* Centraliza o título */
     }
 
     .form-container input,
@@ -153,17 +153,19 @@
         padding: 10px;
         margin: 10px 0;
         border: 1px solid #ccc;
-        border-radius: 5px;
+        border-radius: 0; /* Removido o arredondamento */
+        font-size: 16px; /* Tamanho da fonte */
     }
 
     .form-container button {
         background-color: #2D83B6; /* Cor do botão */
         color: white;
         border: none;
-        border-radius: 5px;
+        border-radius: 0; /* Removido o arredondamento */
         padding: 10px 20px;
         cursor: pointer;
         transition: background-color 0.3s ease;
+        width: 100%; /* Botão ocupa toda a largura */
     }
 
         .form-container button:hover {
@@ -172,12 +174,12 @@
 
 
 .image-box {
-    width: 420px; /* Faz a imagem ocupar todo o espaço do contêiner */
+    width: 420px; 
     position: relative;
     right: -190px;
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Suaviza os cantos da imagem */
-    top: 40px; /* Aumenta para descer mais */
+    height: auto; 
+    border-radius: 10px; 
+    top: 40px; 
 }
 
 .footer {
