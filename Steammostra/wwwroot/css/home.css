@@ -160,17 +160,22 @@
     margin-right: -300px;
     margin-top: -15px;
     margin-bottom: 150px;
-    align-items: flex-end; /* Faz o conteúdo descer ao máximo */
 }
 
     .banner-help .help {
         position: relative;
         justify-content: flex-end;
         color: white;
-        padding-bottom: 20px; /* Desce o conteúdo o máximo possível */
         padding-right: 90px;
         font-size: 20px;
         font-weight: 400;
+        margin-right: 350px;
+    }
+
+    .help{
+    position:absolute;
+    margin-top: 90px;
+    margin-left: 150px;
     }
 
 .prox-viagem {
@@ -185,9 +190,11 @@
 
 .viagem-item {
     margin: 0 20px;
-    justify-content: flex-start;
     flex: 1;
-    margin-top: 70px;
+    margin-top: -90px;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    margin-left: -4px;
 }
 
 .viagem-img {
