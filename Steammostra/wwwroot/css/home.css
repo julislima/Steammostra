@@ -168,7 +168,8 @@
         color: white;
         padding-right: 90px;
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 700;
+        font-size: 45px;
         margin-right: 350px;
     }
 
@@ -186,14 +187,16 @@
     margin-bottom: 120px;
     font-size: 25px;
     font-weight: bold;
+    margin-left: -2px;
 }
 
 .viagem-item {
-    display: flex; 
-    justify-content: space-between; 
-    margin: 0 20px; 
-    margin-top: -90px; 
-    margin-bottom: 150px; 
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    margin-top: -90px;
+    margin-bottom: 150px;
+    margin-left: -2px;
 }
 
 .lugares {
@@ -217,4 +220,14 @@
 
 .lugares:not(:last-child) {
     margin-bottom: 5px;
+}
+
+.busque-viagem {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: -50px;
+    margin-left: 10px;
 }
