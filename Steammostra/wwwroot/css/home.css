@@ -189,15 +189,32 @@
 }
 
 .viagem-item {
-    margin: 0 20px;
-    flex: 1;
-    margin-top: -90px;
-    justify-content: space-between;
-    margin-bottom: 150px;
-    margin-left: -4px;
+    display: flex; 
+    justify-content: space-between; 
+    margin: 0 20px; 
+    margin-top: -90px; 
+    margin-bottom: 150px; 
 }
 
-.viagem-img {
-    width: 100%;
+.lugares {
+    height: auto; 
+}
+
+.img1 {
+    width: 90%; 
+}
+
+.img2 {
+    width: 80%; 
+    margin-left: 40px;
+}
+
+.img3 {
+    width: 70%; 
     height: auto;
+    margin-left: 40px;
+}
+
+.lugares:not(:last-child) {
+    margin-bottom: 5px;
 }
