@@ -21,6 +21,9 @@
     <Content Remove="Pages\Home2.cshtml" />
     <Content Remove="Pages\Privacy.cshtml" />
     <Content Remove="wwwroot\imagens\EleveadorLacerda.png" />
+    <Content Remove="wwwroot\imagens\imagehome.png" />
+    <Content Remove="wwwroot\imagens\piermahimahi.png" />
+    <Content Remove="wwwroot\imagens\senhorbonfim.png" />
   </ItemGroup>
 
   <ItemGroup>
