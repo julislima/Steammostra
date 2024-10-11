@@ -34,13 +34,38 @@
 
       
     </div>
-    
+   
+
+    <div class= "roteamento">
+        Roteamento de lugares
+    </div>
+
+
+    <div class="cards-container">
+        <div class="card">
+            <h3>Guias para Deficiencia Visual</h3>
+            <p>Descubra lugares que oferecem recursos visuais e sinalização para garantir uma experiência acessível e inclusiva.</p>
+            <a href="@Url.Page("rotaauditivo")"> <button type="submit" class="play-button">Saiba Mais</button></a>
+        </div>
+        <div class="card">
+            <h3>Guias para Deficiencia Auditivos</h3>
+            <p>Explore espaços adaptados com rampas, elevadores., proporcionando conforto e liberdade de movimentação.</p>
+            <a href="@Url.Page("rotafisicos")"> <button type="submit" class="play-button">Saiba Mais</button></a>
+        </div>
+        <div class="card">
+            <h3>Guias para Deficiencia Física</h3>
+            <p>Encontre locais que oferecem descrições táteis e audioguias, tornando a exploração do ambiente mais rica e acessível.</p>
+            <a href="@Url.Page("rotacegos")"> <button type="submit" class="play-button">Saiba Mais</button></a>
+        </div>
+    </div>
+
+
     <div class="busque-viagem">
         Busca Populares
     </div>
 
     <div class="image-container">
- 
+
         <div class="image-box">
             <img src="~/imagens/elevador.png" alt="Elevador Lacerda">
             <h3>Elevador Lacerda, Salvador</h3>
@@ -56,21 +81,7 @@
         </div>
     </div>
 
-    <div class="prox-viagem">
-        Inspire-se para sua próxima viagem
-    </div>
-
-    <div class="viagem-item">
-        <img class="lugares img1" src="~/imagens/solarunhao.png" alt="Imagem 1" />
-        <h3>Solar Unhao, Salvador</h3>
-
-        <img class="lugares img2" src="~/imagens/faroll.png" alt="Imagem 2" />
-        <h3>Farol da Barra, Salvador</h3>
-
-        <img class="lugares img3" src="~/imagens/msueuafro.png" alt="Imagem 3" />
-        <h3>Museu Afro Brasileiro, Salvador</h3>
-    </div>
-
+    <img class="salvador-banner" src="~/imagens/ssa.png" />
 
     <div class="banner-help">
         <div class="help">
@@ -81,6 +92,8 @@
 
         <img class="help-banne" src="~/imagens/help.png">
     </div>
+
+
 
 </body>
 </html>

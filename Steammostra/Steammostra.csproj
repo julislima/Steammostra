@@ -15,11 +15,14 @@
 
   <ItemGroup>
     <Compile Remove="Pages\Privacy.cshtml.cs" />
+    <Compile Remove="Pages\Serviços.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="Pages\Home2.cshtml" />
     <Content Remove="Pages\Privacy.cshtml" />
+    <Content Remove="Pages\Serviços.cshtml" />
+    <Content Remove="wwwroot\css\servicos.css" />
     <Content Remove="wwwroot\imagens\EleveadorLacerda.png" />
     <Content Remove="wwwroot\imagens\imagehome.png" />
     <Content Remove="wwwroot\imagens\piermahimahi.png" />
