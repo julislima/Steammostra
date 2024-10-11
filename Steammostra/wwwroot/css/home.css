@@ -246,3 +246,26 @@ width: 100%;
 height: auto;
 margin-bottom: 120px;
 }
+
+
+.indica { /* titulo recomenedamos */
+position: relative;
+font-size: 60px;
+font-weight: 600;
+margin-left: 600px;
+margin-top: 100px;
+
+}
+
+.paragrafo {
+position: relative;
+font-size: 23px;
+margin-left: 600px;
+margin-top: 5px
+}
+
+.mixturismo{
+position: relative;
+margin-top: -300px;
+margin-bottom: 60px;
+}
