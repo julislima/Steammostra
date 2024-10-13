@@ -6,43 +6,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rota para Deficientes Visuais</title>
-    <link rel="stylesheet" href="@Url.Content("~/css/rotacegos.css")" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="~/css/rotacegos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-
     <div class="navbar">
         <img src="~/imagens/LOGOOFC.png" alt="Logo">
         <div class="nav-links">
             <a href="/home">Início</a>
             <a href="/sobre">Sobre</a>
-            <a href="/Serviços">Serviços</a>
-                    </div>
-                </div>
-            </div>
-    <div class="main-content">
-        <img alt="Colorful umbrellas hanging over a street with tables and chairs below" height="300" src="IMGSANTOANTONIO (1).png" width="300" />
-        <div class="text-content">
-            <h1>Santo Antônio Além do Carmo</h1>
-            <p>É um bairro histórico de Salvador, na Bahia, conhecido por sua rica herança cultural e arquitetônica. Localizado na colina que se ergue sobre a Baía de Todos os Santos, o bairro possui ruas de paralelepípedos, casas coloniais coloridas e igrejas centenárias, como a Igreja de Santo Antônio.</p>
         </div>
     </div>
 
-    <div class="foot-content">
-        <div class="other-places">
-            <h2 cla>Outros lugares</h2>
-            <div class="places">
-                <img alt="Interior of a hotel room with a large bed and windows" src="Group 38.png" />
-                <img alt="Interior of a hotel room with a large bed and windows" src="Group 38.png" />
+    <div class="container">
+    <div class="filter">
+        <h3>Filtrar resultados por:</h3>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" />
+                <span>Fantástico 9 ou mais</span>
+            </label>
+            <label>
+                <input type="checkbox" />
+                <span>Muito bom 8 ou mais</span>
+            </label>
+            <label>
+                <input type="checkbox" />
+                <span>Bom 7 ou mais</span>
+            </label>
+            <label>
+                <input type="checkbox" />
+                <span>Satisfatório 6 ou mais</span>
+            </label>
+        </div>
+    </div>
+    <div class="results">
+        <div class="result-item">
+            <img alt="Imagem de Santo Antônio Além do Carmo" src="IMGSANTOANTONIO.png" width="220" />
+            <div class="content">
+                <h4>Santo Antônio Além do Carmo</h4>
+                <p>Possui uma atmosfera descontraída e artística, com cafés independentes, lojas de roupas vintage e moradias em tons pastel ao longo da rua principal, a Rua Direita</p>
+                <a class="btn" href="#">Visualizar destino</a>
             </div>
         </div>
-        <div class="reviews">
-            <h2>Avaliações</h2>
-            <div class="review-list">
-                <p>Este lugar é maravilhoso</p>
-                <p>Acessibilidade sensacional!</p>
+        <div class="result-item">
+            <img alt="Imagem de Ilha dos Frades" src="Ilha dos Frades.png" width="220" />
+            <div class="content">
+                <h4>Ilha dos Frades</h4>
+                <p>Localizada no centro da baía de Todos os Santos, pertencente á Salvador. Tendo como pontos turísticos, praia do loreto, praia de paramaná, praia do tobar, praia da viração, praia da ponta de nossa senhora de guadalupe, mirantes e trilhas ecológicas.</p>
+                <a class="btn" href="#">Visualizar destino</a>
             </div>
-</body>
+        </div>
+        <div class="result-item">
+            <img alt="Imagem da Catedral-Basílica Primacial de São Salvador" src="Catedral Basilica.png" width="220" />
+            <div class="content">
+                <h4>Catedral-Basílica Primacial de São Salvador</h4>
+                <p>É a igreja mãe de todas as igrejas na circunscrição eclesiástica de São Salvador da Bahia, onde fica a cátedra do arcebispo metropolitano e primaz do Brasil.</p>
+                <a class="btn" href="#">Visualizar destino</a>
+            </div>
+        </div>
+    </div>
+</div>
+ </body>
 </html>
