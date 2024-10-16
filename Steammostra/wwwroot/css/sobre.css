@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+﻿﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -38,63 +42,199 @@ body {
             color: #dad6d6;
         }
 
-/* Banner */
-#about-banner {
-    background-color: #2D83B6;
+.banner {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centraliza o conte�do horizontalmente */
+    position: relative;
     background-size: cover;
-    height: 450px; /* Dimens�o ajustada */
+    height: 450px; /* Ajustado para manter altura consistente */
     padding: 20px;
-    margin-top: 30px;
-    width: 1890px; /* Dimens�o ajustada */
+    background-color: #2D83B6;
     background-position: center;
+    width: 1890px;
+    margin-top: 30px;
     margin-left: -300px;
 }
 
-    #about-banner .banner-content {
-        color: white;
-        display: flex;
-        font-size: 3.5em;
-        justify-content: center;
-        padding-top: 145px;
-        margin: 0;
-        font-weight: 700;
-    }
+.text-background {
+    color: white;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: 60px;
+    top: 150px;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 60px;
+    margin-top: 40px;
+}
 
-/* Texto sobre n�s */
-#about-text {
-    padding: 2rem;
+
+.btn-login {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+
+/* Seção sobre */
+.sobre {
+    padding: 60px 0;
     background-color: #fff;
 }
 
-    #about-text .container {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    #about-text p {
-        font-size: 1.1rem;
-        line-height: 1.8;
-    }
-
-/* Subt�tulo */
-#about-subtitle {
-    padding: 2rem;
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
-    #about-subtitle .container {
-        max-width: 800px;
-        margin: 0 auto;
+    .sobre-conteudo img {
+        max-width: 450px; /* Aumente o tamanho da imagem */
+        border-radius: 8px;
+        width: 100%; /* Isso garante que a imagem ocupe toda a largura do seu contêiner */
+        height: auto; /* Mantém a proporção da imagem */
     }
 
-    #about-subtitle h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+.sobre-texto {
+    max-width: 600px; /* Limita a largura do texto para melhor leitura */
+}
+
+    .sobre-texto h2 {
+        font-size: 60px;
+        margin-bottom: 16px;
     }
 
-    #about-subtitle p {
-        font-size: 1rem;
-        line-height: 1.6;
+    .sobre-texto p {
+        color: #666;
+        font-size: 23px; /* Aumente o tamanho da fonte do texto para melhor legibilidade */
     }
+
+
+/* Seção missão */
+.nossa-missao {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    height: 450px; /* Ajustado para manter altura consistente */
+    padding: 20px;
+    background-color: #2D83B6;
+    background-position: center;
+    width: 1890px;
+    margin-top: 50px;
+    margin-left: -300px;
+}
+
+    .nossa-missao h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+.imagens {
+    display: flex; /* Usa flexbox para alinhar as imagens */
+    justify-content: center; /* Centraliza as imagens */
+    gap: 20px; /* Espaço entre as imagens */
+    margin-bottom: 40px; /* Espaço abaixo das imagens */
+}
+
+.imagem-praia,
+.imagem-edificio {
+    width: 100%; /* As imagens ocupam 100% do seu contêiner */
+    max-width: 450px; /* Limita a largura máxima das imagens */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra nas imagens */
+    transition: transform 0.3s; /* Efeito de transição suave para transformações */
+}
+
+/* Seção contato */
+.contact-info {
+    margin-bottom: 60px;
+}
+
+.contact-box {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+    .contact-box.email {
+        background-color: #007bff;
+        color: white;
+    }
+
+.info-text {
+    font-size: 14px;
+    margin-top: 90px;
+}
+
+.rate-experience {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Seção login */
+.login-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.login-form {
+    width: 45%;
+}
+
+    .login-form h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .login-form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .login-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #000;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+.illustration {
+    width: 45%;
+}
+
+    .illustration img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.login-section {
+    flex-direction: column;
+}
+
+.login-form, .illustration {
+    width: 100%;
+}
+
+.illustration {
+    margin-top: 20px;
+}
+}
