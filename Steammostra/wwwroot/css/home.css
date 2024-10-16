@@ -107,12 +107,14 @@
     .image-container .image-box {
         width: 30%;
         text-align: center;
+        
     }
 
     .image-container img {
         width: 100%;
         height: auto;
         margin-top: 30px;
+        border-radius: 20px;
     }
 
     .image-container h3 {
