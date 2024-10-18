@@ -10,11 +10,6 @@ html, body {
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    background-image: url('https://img.freepik.com/fotos-gratis/mulher-de-tiro-medio-a-divertir-se-na-cidade_23-2150725741.jpg?w=1380&t=st=1727466758~exp=1727467358~hmac=608d36c61c3b8ccc792a6575abc3fdd22499067bb8b6ba11a17b4000a0dd843d');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 body {
