@@ -16,6 +16,7 @@
   <ItemGroup>
     <Compile Remove="Pages\Privacy.cshtml.cs" />
     <Compile Remove="Pages\Serviços.cshtml.cs" />
+    <Compile Remove="Pages\visu1.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +24,7 @@
     <Content Remove="Pages\Privacy.cshtml" />
     <Content Remove="Pages\Serviços.cshtml" />
     <Content Remove="wwwroot\css\servicos.css" />
+    <Content Remove="wwwroot\css\vizualis.cs" />
     <Content Remove="wwwroot\imagens\EleveadorLacerda.png" />
     <Content Remove="wwwroot\imagens\imagehome.png" />
     <Content Remove="wwwroot\imagens\mab-cegos.webp" />

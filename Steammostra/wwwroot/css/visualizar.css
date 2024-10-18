@@ -1,0 +1,170 @@
+﻿body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    margin-top: 10px;
+}
+
+    .navbar img {
+        height: 50px;
+        margin-left: -250px;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        align-items: center;
+        margin-right: -250px;
+    }
+
+    .navbar a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+        .navbar a:hover {
+            color: #dad6d6;
+        }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.main-content {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+    .main-content img {
+        width: 360px;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-right: 40px;
+    }
+
+    .main-content .text-content {
+        max-width: 600px;
+    }
+
+        .main-content .text-content h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .main-content .text-content p {
+            font-size: 21px;
+            line-height: 1.5;
+        }
+
+.foot-content {
+    display: inline-flex;
+    width: 100%;
+    gap: 30px;
+}
+
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-right: 150px;
+}
+
+/Outros Lugares/
+.other-places {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.other-places .places {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+    .other-places .places img {
+        width: 210px;
+        max-height: 150px;
+        object-fit: cover;
+        border-radius: 20px;
+        justify-content: left;
+    }
+
+/* CSS para a Seção de Comentários */
+.comments-section {
+    margin-top: 30px;
+}
+
+    .comments-section h3 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        display: flex;
+        left: 150px;
+    }
+
+.existing-comments {
+    margin-bottom: 20px;
+}
+
+    .existing-comments p {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 0.95em;
+    }
+
+    .existing-comments strong {
+        color: #333;
+        font-weight: bold;
+    }
+
+.add-comment h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.add-comment textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.add-comment .submit-comment {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .add-comment .submit-comment:hover {
+        background-color: rgb(0, 0, 0);
+    }
