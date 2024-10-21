@@ -15,151 +15,17 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    min-height: 100vh;
+    background-image: url(../imagens/batata.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta a imagem para cobrir a tela inteira */
+    background-position: center; /* Centraliza a imagem no fundo */
 }
- 
-}
-
-.form-body {
-    flex: 1; /* Permite que o conteúdo ocupe o espaço disponível */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding: 20px;
-    background-color: #e08d4e83; /* Cor de fundo semitransparente para o formulário */
-    border-radius: 10px;
-    padding-bottom: 5000px;
-}
-
-.form-holder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.form-content {
-    border: 3px solid #daa37f;
-    padding: 40px;
-    border-radius: 10px;
-    background-color: #fff;
-    width: 100%;
-    max-width: 540px;
-}
-
-.form-items {
-    width: 100%;
-    text-align: left;
-}
-
-h3 {
-    color: #000;
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-p {
-    color: #000;
-    font-size: 17px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-input[type=text],
-input[type=password],
-input[type=email],
-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background-color: #fff;
-    font-size: 15px;
-    color: #333;
-    margin-top: 5px;
-    box-sizing: border-box;
-}
-
-    input:focus, select:focus {
-        border-color: #6C757D;
-        outline: none;
-    }
-
-.invalid-feedback {
-    color: #ff606e;
-    display: none;
-}
-
-.form-group.invalid .invalid-feedback {
-    display: block;
-}
-
-.form-group.invalid input,
-.form-group.invalid select {
-    border-color: #ff606e;
-}
-
-.form-check {
-    margin: 15px 0;
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-.form-check-input {
-    margin-right: 10px;
-}
-
-.form-check-label {
-    font-size: 15px;
-}
-
-.form-button {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.play-button {
-    background-color: #daa37f;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-    .play-button:disabled {
-        background-color: #ccc;
-        cursor: not-allowed;
-    }
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background-color: #b2bd56;
-    outline: none;
-}
-
 .banner {
     display: flex;
-    align-items: flex-end; /* Alinha os itens ao fundo do contêiner */
-    justify-content: center; /* Alinha os itens ao centro horizontalmente */
-    height: 50vh; /* Definindo altura para visualizar o alinhamento ao fundo */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .banner__overlay {
@@ -167,7 +33,7 @@ select {
     color: #fff;
     padding: 20px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.5); /* Adiciona um fundo escuro semi-transparente para o container */
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .banner__title {
@@ -181,12 +47,29 @@ select {
     font-size: 1.5em;
     margin-bottom: 30px;
     font-weight: 300;
-    color:white;
-    outline:none;
+    color: white;
+    outline: none;
 }
 
+.play-button {
+    background-color: #daa37f;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .play-button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
 .footer {
-    background-color: #007BFF; /* Cor do footer */
+    background-color: #007BFF;
     color: white;
     text-align: center;
     padding: 10px;
