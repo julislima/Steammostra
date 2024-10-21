@@ -15,9 +15,13 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+}
+ 
 }
 
 .form-body {
+    flex: 1; /* Permite que o conteúdo ocupe o espaço disponível */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +29,7 @@ body {
     padding: 20px;
     background-color: #e08d4e83; /* Cor de fundo semitransparente para o formulário */
     border-radius: 10px;
+    padding-bottom: 5000px;
 }
 
 .form-holder {
@@ -181,11 +186,8 @@ select {
 }
 
 .footer {
-    background-color: #fff;
-    color: #fff;
+    background-color: #007BFF; /* Cor do footer */
+    color: white;
     text-align: center;
-    padding: 1px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 10px;
 }

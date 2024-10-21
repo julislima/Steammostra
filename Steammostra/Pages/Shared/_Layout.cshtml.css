@@ -55,9 +55,11 @@ main {
     color: white; /* Texto branco no footer */
     text-align: center; /* Centraliza o conteúdo no meio */
     padding: 20px; /* Espaçamento interno */
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    display: flex; /* Usando flexbox para o footer */
+    flex-wrap: wrap; /* Permite que as colunas quebrem em múltiplas linhas se necessário */
 }
 
 .header {
@@ -69,12 +71,13 @@ main {
 }
 
 .column {
-    flex: 1;
-    margin-right: 20px;
+    flex: 1; /* Cada coluna ocupa espaço igual */
+    margin-right: 20px; /* Margem entre colunas */
+    min-width: 150px; /* Largura mínima */
 }
 
     .column:last-child {
-        margin-right: 0;
+        margin-right: 0; /* Remove margem da última coluna */
     }
 
 h2 {
@@ -83,27 +86,39 @@ h2 {
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
 }
 
 li {
     font-size: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Espaçamento entre itens da lista */
 }
 
 .icons {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Flexbox para ícones */
+    justify-content: space-between; /* Espaçamento entre ícones */
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    border-radius: 50%;
+    width: 30px; /* Largura do ícone */
+    height: 30px; /* Altura do ícone */
+    background-color: white; /* Cor de fundo do ícone */
+    border-radius: 50%; /* Ícones redondos */
 }
 
+/* Media Query para Responsividade */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Colunas empilhadas em telas menores */
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    .column {
+        margin-right: 0; /* Remove margens nas colunas */
+        margin-bottom: 20px; /* Adiciona espaço entre colunas */
+    }
+}
 
 
