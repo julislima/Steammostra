@@ -60,6 +60,13 @@ body {
     margin-left: -300px;
 }
 
+.image-banner {
+    position: relative;
+    right: -1px;
+    top: -80px;
+ 
+    padding-bottom: 10px;
+}
 /* Seções */
 section {
     padding: 20px;
