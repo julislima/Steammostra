@@ -16,10 +16,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(../imagens/batata.png);
+    background-color: #fff;
     background-repeat: no-repeat;
-    background-size: cover; /* Ajusta a imagem para cobrir a tela inteira */
-    background-position: center; /* Centraliza a imagem no fundo */
 }
 .banner {
     display: flex;
@@ -28,12 +26,11 @@ body {
     height: 100vh;
 }
 
-.banner__overlay {
+.botao {
     text-align: center;
     color: #fff;
     padding: 20px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .banner__title {
@@ -52,9 +49,9 @@ body {
 }
 
 .play-button {
-    background-color: #daa37f;
+    background-color: #8bcaf8;
     border: none;
-    color: #fff;
+    color: black;
     padding: 10px 20px;
     border-radius: 6px;
     cursor: pointer;
