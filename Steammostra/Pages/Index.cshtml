@@ -5,20 +5,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu de Navegação</title>
+    <title>Página inicial</title>
     <link rel="stylesheet" href="~/css/index.css" />
     <meta name="theme-color" content="#daa37f">
 </head>
 <body>
     <div class="banner">
-        <img src="~/imagens/conectindex.png">        
-        <img src="~/imagens/mixindex.png">
+        <img src="~/imagens/conectindex.png" class="conect">
+        <img src="~/imagens/mixindex.png" class="imagem-direita">
 
         <div class="botao">
-                <a href="@Url.Page("Create")" class="play-button">Vamos começar!</a>
-            </>
+            <a href="@Url.Page("Create")" class="play-button">Vamos começar!</a>
         </div>
+
     </div>
+
 
 </body>
 </html>

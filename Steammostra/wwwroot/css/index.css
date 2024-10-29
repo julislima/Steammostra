@@ -17,7 +17,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: #fff;
-    background-repeat: no-repeat;
 }
 .banner {
     display: flex;
@@ -26,12 +25,27 @@ body {
     height: 100vh;
 }
 
-.botao {
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+.conect {
+    position: absolute; /* Mantém a imagem posicionada */
+    top: 40%; /* Ajuste o valor para mover a imagem mais para cima ou para baixo */
+    left: 35%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para que o centro da imagem fique no meio do contêiner */
+    width: 40%; /* Tamanho da imagem */
+    z-index: 5; /* Certifique-se de que o z-index é menor que o do botão */
 }
+
+
+
+.imagem-direita {
+    position: absolute; /* Mantém a imagem fixa na tela */
+    right: 0; /* Coloca a imagem no lado direito */
+    top: 50%; /* Posiciona a imagem no meio vertical da tela */
+    transform: translateY(-50%); /* Centraliza a imagem verticalmente */
+    width:30%; /* Define uma largura maior para a imagem */
+    z-index: 10; /* Garante que a imagem fique acima de outros elementos */
+    height: auto; /* Mantém a proporção */
+}
+
 
 .banner__title {
     font-size: 3em;
@@ -48,8 +62,20 @@ body {
     outline: none;
 }
 
+.botao {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20%; /* Ajuste a margem superior conforme necessário para posicionar o botão abaixo da imagem */
+    position: absolute; /* Mantenha a posição absoluta para ficar no mesmo contêiner */
+    left: 19%; /* Centraliza horizontalmente */
+    z-index: 15; /* Aumente o z-index para ser maior que a imagem */
+}
+
+
 .play-button {
-    background-color: #8bcaf8;
+    background-color: #8bcaf8; /* Cor de fundo padrão */
     border: none;
     color: black;
     padding: 10px 20px;
@@ -58,12 +84,21 @@ body {
     font-size: 16px;
     text-decoration: none;
     display: inline-block;
+    width: 200px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transição suave */
 }
+
+    .play-button:hover {
+        background-color: #5BB4F5; /* Nova cor de fundo quando o mouse está sobre o botão */
+        color: white; /* Nova cor do texto quando o mouse está sobre o botão */
+        transform: translateY(-2px); /* Move o botão ligeiramente para cima */
+    }
 
     .play-button:disabled {
         background-color: #ccc;
         cursor: not-allowed;
     }
+
 
 .footer {
     background-color: #007BFF;
