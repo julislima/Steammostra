@@ -28,7 +28,7 @@ body {
 .conect {
     position: absolute; /* Mantém a imagem posicionada */
     top: 40%; /* Ajuste o valor para mover a imagem mais para cima ou para baixo */
-    left: 35%; /* Centraliza horizontalmente */
+    left: 30%; /* Centraliza horizontalmente */
     width: 35%;
     transform: translate(-50%, -50%); /* Ajusta para que o centro da imagem fique no meio do contêiner */
     z-index: 5; /* Certifique-se de que o z-index é menor que o do botão */
@@ -68,7 +68,7 @@ body {
     border-radius: 10px;
     margin-top: 20%; /* Ajuste a margem superior conforme necessário para posicionar o botão abaixo da imagem */
     position: absolute; /* Mantém a posição absoluta para ficar no mesmo contêiner */
-    left: 25.5%; /* Alinha ao centro horizontalmente */
+    left: 20.5%; /* Alinha ao centro horizontalmente */
     transform: translateX(-50%); /* Corrige a centralização */
     z-index: 15; /* Aumente o z-index para ser maior que a imagem */
 }
