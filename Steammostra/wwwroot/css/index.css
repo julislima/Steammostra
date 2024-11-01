@@ -29,8 +29,8 @@ body {
     position: absolute; /* Mantém a imagem posicionada */
     top: 40%; /* Ajuste o valor para mover a imagem mais para cima ou para baixo */
     left: 35%; /* Centraliza horizontalmente */
+    width: 35%;
     transform: translate(-50%, -50%); /* Ajusta para que o centro da imagem fique no meio do contêiner */
-    width: 40%; /* Tamanho da imagem */
     z-index: 5; /* Certifique-se de que o z-index é menor que o do botão */
 }
 
@@ -41,7 +41,6 @@ body {
     right: 0; /* Coloca a imagem no lado direito */
     top: 50%; /* Posiciona a imagem no meio vertical da tela */
     transform: translateY(-50%); /* Centraliza a imagem verticalmente */
-    width:30%; /* Define uma largura maior para a imagem */
     z-index: 10; /* Garante que a imagem fique acima de outros elementos */
     height: auto; /* Mantém a proporção */
 }
@@ -65,32 +64,32 @@ body {
 .botao {
     text-align: center;
     color: #fff;
-    padding: 20px;
+    padding: 20px; /* Ajuste conforme necessário */
     border-radius: 10px;
     margin-top: 20%; /* Ajuste a margem superior conforme necessário para posicionar o botão abaixo da imagem */
-    position: absolute; /* Mantenha a posição absoluta para ficar no mesmo contêiner */
-    left: 19%; /* Centraliza horizontalmente */
+    position: absolute; /* Mantém a posição absoluta para ficar no mesmo contêiner */
+    left: 25.5%; /* Alinha ao centro horizontalmente */
+    transform: translateX(-50%); /* Corrige a centralização */
     z-index: 15; /* Aumente o z-index para ser maior que a imagem */
 }
-
 
 .play-button {
     background-color: #8bcaf8; /* Cor de fundo padrão */
     border: none;
-    color: black;
-    padding: 10px 20px;
+    color: black; /* Mantém a cor do texto */
+    padding: 15px 30px; /* Aumenta o padding para um botão maior */
     border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 16px; /* Mantém o tamanho da fonte */
     text-decoration: none;
     display: inline-block;
-    width: 200px;
+    width: 250px; /* Aumenta a largura do botão */
     transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transição suave */
 }
 
     .play-button:hover {
         background-color: #5BB4F5; /* Nova cor de fundo quando o mouse está sobre o botão */
-        color: white; /* Nova cor do texto quando o mouse está sobre o botão */
+        color: black; /* Mantém a cor do texto quando o mouse está sobre o botão */
         transform: translateY(-2px); /* Move o botão ligeiramente para cima */
     }
 
