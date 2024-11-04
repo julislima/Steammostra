@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Formulário de Login/Registro</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login/Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <style>
 	* {
@@ -238,67 +238,74 @@
 		a.play-button:focus {
 			outline: none;
 		}
-
 </style>
 <body>
-	<div class="container" id="container">
-		<div class="form-container sign-up-container">
-			<form action="homepage.html" method="POST">
-				<h1>Criar Conta</h1>
-				<div class="social-container">
-					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-				</div>
-				<span>ou use seu e-mail para registro</span>
-				<input type="text" placeholder="Nome" required />
-				<input type="email" placeholder="E-mail" required />
-				<input type="password" placeholder="Senha" required />
-				<a href="@Url.Page("Home")" class="play-button">Criar Cadastro</a>
-			</form>
-		</div>
-		<div class="form-container sign-in-container">
-			<form action="homepage.html" method="POST">
-				<h1>Entrar</h1>
-				<div class="social-container">
-					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-				</div>
-				<span>ou use sua conta</span>
-				<input type="email" placeholder="E-mail" required />
-				<input type="password" placeholder="Senha" required />
-				<a href="#">Esqueceu sua senha?</a>
-				<a href="@Url.Page("Home")" class="play-button">Entrar</a>
-			</form>
-		</div>
-		<div class="overlay-container">
-			<div class="overlay">
-				<div class="overlay-panel overlay-left">
-					<h1>Bem-vindo de Volta!</h1>
-					<p>Para se manter conectado conosco, por favor faça login com suas informações pessoais</p>
-					<button class="ghost" id="signIn">Entrar</button>
-				</div>
-				<div class="overlay-panel overlay-right">
-					<h1>Olá, Amigo!</h1>
-					<p>Insira seus dados pessoais e comece sua jornada conosco</p>
-					<button class="ghost" id="signUp">Criar Conta</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script>
-		const signUpButton = document.getElementById('signUp');
-		const signInButton = document.getElementById('signIn');
-		const container = document.getElementById('container');
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <!-- O formulário agora usa a tag Razor "form" com method POST para enviar os dados -->
+            <form method="post">
+                <h1>Criar Conta</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use seu e-mail para registro</span>
 
-		signUpButton.addEventListener('click', () => {
-			container.classList.add("right-panel-active");
-		});
+                <!-- Campos de entrada do formulário -->
+                <input type="text" name="Logins.nome" placeholder="Nome" required />
+                <input type="email" name="Logins.email" placeholder="E-mail" required />
+                <input type="password" name="Logins.senha" placeholder="Senha" required />
 
-		signInButton.addEventListener('click', () => {
-			container.classList.remove("right-panel-active");
-		});
-	</script>
+                <!-- Botão para submeter o formulário -->
+                <button type="submit">Criar Cadastro</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <form action="homepage.html" method="POST">
+                <h1>Entrar</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use sua conta</span>
+                <input type="email" placeholder="E-mail" required />
+                <input type="password" placeholder="Senha" required />
+                <a href="#">Esqueceu sua senha?</a>
+                <a href="@Url.Page("Home")" class="play-button">Entrar</a>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bem-vindo de Volta!</h1>
+                    <p>Para se manter conectado conosco, por favor faça login com suas informações pessoais</p>
+                    <button class="ghost" id="signIn">Entrar</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Olá, Amigo!</h1>
+                    <p>Insira seus dados pessoais e comece sua jornada conosco</p>
+                    <button class="ghost" id="signUp">Criar Conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+               container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+               container.classList.remove("right-panel-active");
+        });
+    </script>
 </body>
 </html>

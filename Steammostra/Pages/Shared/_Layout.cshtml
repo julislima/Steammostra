@@ -3,65 +3,48 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Steammostra.styles.css" asp-append-version="true" />
 </head>
 <body>
-    
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    </div>
     <footer>
         <div class="espaco-topo"></div>
         <header class="header">
             <div class="column">
-                <h2>Minha Conta</h2>
-                <ul>
-                    <li>Passaporte</li>
-                    <li>Cartão Decolcar</li>
-                    <li>Minha Viagens</li>
-                    <li>Meu Perfil</li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2>Minha Conta</h2>
-                <ul>
-                    <li>Passaporte</li>
-                    <li>Cartão Decolcar</li>
-                    <li>Minha Viagens</li>
-                    <li>Meu Perfil</li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2>Minha Conta</h2>
-                <ul>
-                    <li>Passaporte</li>
-                    <li>Cartão Decolcar</li>
-                    <li>Minha Viagens</li>
-                    <li>Meu Perfil</li>
-                    <li>Ofertas Uau</li>
-                    <li>Prevenção à fraudes</li>
-                    <li>FaqS</li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2>Minha Conta</h2>
+                <!-- Redes Sociais -->
+                <h2>Siga-nos</h2>
                 <div class="icons">
-                    <div class="icon"></div>
-                    <div class="icon"></div>
-                    <div class="icon"></div>
-                    <div class="icon"></div>
+                    <a href="#"><div class="icon"><img src="~/images/facebook-icon.png" alt="Facebook"></div></a>
+                    <a href="#"><div class="icon"><img src="~/images/instagram-icon.png" alt="Instagram"></div></a>
+                    <a href="#"><div class="icon"><img src="~/images/twitter-icon.png" alt="Twitter"></div></a>
+                    <a href="#"><div class="icon"><img src="~/images/linkedin-icon.png" alt="LinkedIn"></div></a>
+                </div>
+            </div>
+
+            <!-- Acessibilidade -->
+            <div class="column">
+                <h2>Acessibilidade</h2>
+                <div class="icons">
+                    <a href="#"><div class="icon"><img src="~/images/accessibility-icon.png" alt="Acessibilidade"></div></a>
+                    <a href="#"><div class="icon"><img src="~/images/language-icon.png" alt="Idioma"></div></a>
                 </div>
             </div>
         </header>
-    </footer>
 
+        <!-- Copyright dentro do footer -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
