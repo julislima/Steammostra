@@ -1,10 +1,3 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -45,6 +38,7 @@ body {
         }
 
 
+
 /* Banner */
 .banner {
     display: flex;
@@ -83,7 +77,6 @@ section {
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px; /* Bordas arredondadas */
-  
 }
 
 .sobre-conteudo {
@@ -100,23 +93,33 @@ section {
 
 .sobre-texto {
     flex: 1; /* Ocupa o espaço restante */
-   
 }
 
+.conect1 {
+    margin-top: 15px;
+}
 
-
+.nossa {
+    margin-top: 420px;
+    position: absolute;
+    left: 470px;
+    height: 205px;
+}
 /* Nossa Missão */
 .nossa-missao {
     display: flex; /* Para alinhar o conteúdo no eixo horizontal */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     padding: 20px; /* Espaçamento interno */
-    background-color: #2D83B6; /* Cor de fundo */
-    border-radius: 8px; /* Cantos arredondados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+
+
     width: 1890px;
     margin-top: 30px;
     margin-left: -300px;
+}
+
+.contato {
+    margin-top: 270px;
 }
 
 .imagens {

@@ -54,12 +54,16 @@
     width: 100%;
     margin-bottom: 40px;
     align-items: center;
+    position:relative;
+   
+   
 }
-
+    
     .main-content img {
         width: 360px;
         height: 360px;
         object-fit: cover;
+        position: relative;
         border-radius: 20px;
         margin-right: 40px;
     }
@@ -100,17 +104,20 @@
     gap: 30px;
     justify-content: space-between;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 
 .other-places {
     flex-basis: 50%;
+    left: 150px;
 }
 
     .other-places h2 {
-        font-size: 24px;
+        font-size: 27px;
         color: #333;
         margin-bottom: 20px;
+        position: relative;
+        right: 231px;
     }
 
 .places {
@@ -120,11 +127,13 @@
 }
 
     .places img {
-        width: 150px;
+        width: 170px;
         height: 150px;
         object-fit: cover;
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        right: 230px;
+        position: relative;
     }
 
 /* Seção de comentários */
