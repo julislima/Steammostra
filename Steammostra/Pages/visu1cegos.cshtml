@@ -22,7 +22,7 @@
 
     <div class="container">
         <div class="main-content">
-            <img alt="museu de arte da bahia" height="300" src="~/imagens/mab.jpg" width="300" />
+            <img alt="Museu de Arte da Bahia" height="300" src="~/imagens/mab.jpg" width="300" />
             <div class="text-content">
                 <h1>Museu de Arte da Bahia</h1>
                 <h2>O Museu de Arte da Bahia (MAB) possui um variado acervo, que inclui:</h2>
@@ -35,12 +35,23 @@
             </div>
         </div>
 
+        <div class="rating">
+            <h3>Avaliações dos usuários</h3>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+
         <div class="foot-content">
             <div class="other-places">
                 <h2>Outros lugares</h2>
                 <div class="places">
-                    <img alt="outro lugar" src="~/imagens/cidadedamusica.jpg" />
-                    <img alt="lugar turístico" src="~/imagens/lacerda.jpg" />
+                    <img alt="Cidade da Música" src="~/imagens/cidadedamusica.jpg" />
+                    <img alt="Elevador Lacerda" src="~/imagens/lacerda.jpg" />
                 </div>
             </div>
 
@@ -59,6 +70,22 @@
             </div>
         </div>
     </div>
+
+    <!-- Script para fazer as estrelas de avaliação funcionarem -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const stars = document.querySelectorAll('.star-rating .star');
+
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    const rating = star.getAttribute('data-value');
+                    stars.forEach(s => {
+                        s.style.color = s.getAttribute('data-value') <= rating ? 'gold' : 'gray';
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
