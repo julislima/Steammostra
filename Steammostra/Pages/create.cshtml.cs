@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc;
 using Steammostra.Models;
+using System.Linq;
 
 namespace Steammostra.Pages
 {
@@ -8,31 +9,42 @@ namespace Steammostra.Pages
     {
         private readonly ApplicationDbContext _context;
 
-        // Construtor que recebe o contexto do banco de dados
         public CreateModel(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // Propriedade bindable para receber os dados do formulário
         [BindProperty]
         public Logins Logins { get; set; }
 
-        // Método chamado ao submeter o formulário
         public IActionResult OnPost()
         {
-            // Verifica se o estado do modelo é válido
             if (!ModelState.IsValid)
             {
                 return Page();
             }
 
-            // Adiciona o login ao banco de dados
             _context.Logins.Add(Logins);
             _context.SaveChanges();
 
-            // Redireciona para a página inicial após o cadastro
-            return RedirectToPage("/home"); // Assegure-se de que "/home" é a página correta para onde redirecionar
+            return RedirectToPage("/Home"); // Redireciona após o cadastro
+        }
+
+        public IActionResult OnPostLogin()
+        {
+            // Verifica se o email e senha fornecidos estão corretos
+            var usuario = _context.Logins
+                .FirstOrDefault(u => u.email == Logins.email && u.senha == Logins.senha);
+
+            if (usuario != null)
+            {
+                // Exibe mensagem de boas-vindas
+                TempData["BemVindo"] = $"Bem-vindo, {usuario.nome}!";
+                return RedirectToPage("/Home"); // Redireciona para a página inicial
+            }
+
+            ModelState.AddModelError(string.Empty, "E-mail ou senha incorretos.");
+            return Page();
         }
     }
 }

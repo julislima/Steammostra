@@ -9,7 +9,6 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="~/css/home.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -19,23 +18,26 @@
             <a href="/home">Início</a>
             <a href="/sobre">Sobre Nós</a>
             <a href="/perfil">Perfil</a>
-           
         </div>
     </div>
+
     <div class="banner">
         <div class="text-background">
-                <h1>Explore um novo mundo <br /> com a acessibilidade que você merece!</h1>
-              
+            <h1>Explore um novo mundo <br /> com a acessibilidade que você merece!</h1>
             <img class="banner-image" src="~/imagens/MaletaTelaPrincipal.png" alt="MalaViagem">
-         
-            </>
         </div>
-
-      
     </div>
-   
+
+    <!-- Mensagem de boas-vindas -->
+    @if (TempData["BemVindo"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["BemVindo"]
+        </div>
+    }
+
     <div class="indica">
-        Recomendamos Belos<br /> 
+        Recomendamos Belos<br />
         Destinos Todos os meses.
     </div>
 
@@ -45,47 +47,44 @@
 
     <img class="mixturismo" src="~/imagens/mixturismo.png" />
 
-    <div class= "roteamento">
+    <div class="roteamento">
         Roteamento de lugares
     </div>
 
-
     <div class="cards-container">
         <div class="card">
-            <h3>Guias para Deficiencia Visual</h3>
+            <h3>Guias para Deficiência Visual</h3>
             <p>Descubra lugares que oferecem recursos visuais e sinalização para garantir uma experiência acessível e inclusiva.</p>
-            <a href="@Url.Page("rotacegos")"> <button type="submit" class="play-button">Saiba Mais</button></a>
+            <a href="@Url.Page("rotacegos")"><button type="submit" class="play-button">Saiba Mais</button></a>
         </div>
         <div class="card">
-            <h3>Guias para Deficiencia Auditivos</h3>
+            <h3>Guias para Deficiência Auditiva</h3>
             <p>Explore espaços adaptados com rampas, elevadores, proporcionando conforto e liberdade de movimentação.</p>
-            <a href="@Url.Page("rotaauditivo")"> <button type="submit" class="play-button">Saiba Mais</button></a>
+            <a href="@Url.Page("rotaauditivo")"><button type="submit" class="play-button">Saiba Mais</button></a>
         </div>
         <div class="card">
-            <h3>Guias para Deficiencia Física</h3>
+            <h3>Guias para Deficiência Física</h3>
             <p>Encontre locais que oferecem descrições táteis e audioguias, tornando a exploração do ambiente mais rica e acessível.</p>
-            <a href="@Url.Page("rotafisicos")"> <button type="submit" class="play-button">Saiba Mais</button></a>
+            <a href="@Url.Page("rotafisicos")"><button type="submit" class="play-button">Saiba Mais</button></a>
         </div>
     </div>
-
 
     <div class="busque-viagem">
         Busca Populares
     </div>
 
     <div class="image-container">
-
         <div class="image-box">
             <img src="~/imagens/elevador.png" alt="Elevador Lacerda">
             <h3>Elevador Lacerda, Salvador</h3>
         </div>
 
         <div class="image-box">
-            <img src="~/imagens/pelo.png" alt="Imagem 2">
+            <img src="~/imagens/pelo.png" alt="Pelourinho, Salvador">
             <h3>Pelourinho, Salvador</h3>
         </div>
         <div class="image-box">
-            <img src="~/imagens/stantonio.png" alt="Imagem 3">
+            <img src="~/imagens/stantonio.png" alt="Santo Antônio Além do Carmo, Salvador">
             <h3>Santo Antônio Além do Carmo, Salvador</h3>
         </div>
     </div>
@@ -94,12 +93,12 @@
 
     <div class="banner-help">
         <div class="help">
-             Precisa de ajuda?
-                <h6>Converse com a nossa equipe de suporte para obter recomendações<br /> e assistência personalizada durante sua viagem.</h6>
+            Precisa de ajuda?
+            <h6>Converse com a nossa equipe de suporte para obter recomendações<br /> e assistência personalizada durante sua viagem.</h6>
             <button onclick="location.href='sua-pagina.html'" class="btn btn-primary">Saiba Mais</button>
         </div>
-
-        <img class="help-banne" src="~/imagens/help.png">
+        <img class="help-banne" src="~/imagens/help.png" />
+    </div>
 
 </body>
 </html>
