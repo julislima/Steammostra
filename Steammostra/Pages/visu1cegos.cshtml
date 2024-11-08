@@ -22,10 +22,23 @@
 
     <div class="container">
         <div class="main-content">
-            <img alt="Museu de Arte da Bahia" height="300" src="~/imagens/mab.jpg" width="300" />
+            <!-- Carrossel de Imagens -->
+            <div class="carousel-container">
+                <div class="carousel-images">
+                    <img src="~/imagens/mab.jpg" alt="Museu de Arte da Bahia">
+                    <img src="~/imagens/cidadedamusica.jpg" alt="Cidade da Música">
+                    <img src="~/imagens/lacerda.jpg" alt="Elevador Lacerda">
+                </div>
+                <div class="carousel-nav">
+                    <button id="prevBtn">&#10094;</button>
+                    <button id="nextBtn">&#10095;</button>
+                </div>
+            </div>
+
+            <!-- Conteúdo descritivo -->
             <div class="text-content">
                 <h1>Museu de Arte da Bahia</h1>
-                <h2>O Museu de Arte da Bahia (MAB) possui um variado acervo, que inclui:</h2>
+                <h3>O Museu de Arte da Bahia (MAB) possui um variado acervo, que inclui:</h3>
                 <ul>
                     <li>Arte sacra: esculturas e objetos litúrgicos de igrejas baianas.</li>
                     <li>Pinturas: obras de artistas brasileiros dos séculos XVII ao XIX.</li>
@@ -34,6 +47,8 @@
                 </ul>
             </div>
         </div>
+    </div>
+
 
         <div class="rating">
             <h3>Avaliações dos usuários</h3>
@@ -85,6 +100,23 @@
                 });
             });
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const carouselImages = document.querySelector('.carousel-images');
+            const images = document.querySelectorAll('.carousel-images img');
+            let index = 0;
+
+            document.getElementById('prevBtn').addEventListener('click', () => {
+                index = (index > 0) ? index - 1 : images.length - 1;
+                carouselImages.style.transform = `translateX(-${index * 100}%)`;
+            });
+
+            document.getElementById('nextBtn').addEventListener('click', () => {
+                index = (index < images.length - 1) ? index + 1 : 0;
+                carouselImages.style.transform = `translateX(-${index * 100}%)`;
+            });
+        });
+
     </script>
 </body>
 
