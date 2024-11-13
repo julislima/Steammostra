@@ -109,6 +109,9 @@
     margin-left: 150px; /* Adiciona espaçamento entre o carrossel e o texto */
 }
 
+.text-content h1{
+    font-size: 28px;
+}
 
 .text-content h3{
     font-size: 22px;
