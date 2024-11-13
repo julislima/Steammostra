@@ -1,2 +1,164 @@
-﻿body {
+﻿﻿body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    margin-top: 10px;
+}
+
+    .navbar img {
+        height: 50px;
+        margin-left: -250px;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        align-items: center;
+        margin-right: -250px;
+    }
+
+    .navbar a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+        .navbar a:hover {
+            color: #dad6d6;
+        }
+
+
+
+/* Banner */
+/* Ajuste do Banner */
+
+
+.banner2 {
+    width: 1050px;
+    max-width: 100%; /* Responsivo para telas menores */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    position: relative;
+    top: 80px;
+    padding-bottom:150px;
+    left:12%;
+}
+
+/* Ajuste da área de conteúdo principal */
+
+
+.main-content {
+    flex: 1; /* Garante que o conteúdo principal expanda para ocupar o espaço */
+    min-height: calc(100vh - altura-do-footer - altura-da-navbar); /* Ajuste conforme necessário */
+    padding: 60px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+/* Mantém o menu ocupando o espaço disponível */
+.menu-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom:150px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    /* Efeito hover para mudar a cor e sombra */
+    .menu-item:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+    .icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+.green {
+    background-color: #e6f7e6;
+}
+
+    .green svg {
+        stroke: #4caf50;
+        fill: none;
+    }
+
+.blue {
+    background-color: #e3f2fd;
+}
+
+    .blue svg {
+        stroke: #2196f3;
+        fill: none;
+    }
+
+.purple {
+    background-color: #f3e5f5;
+}
+
+    .purple svg {
+        stroke: #9c27b0;
+        fill: none;
+    }
+
+.item-content {
+    flex-grow: 1;
+}
+
+    .item-content h2 {
+        font-size: 16px;
+        margin: 0 0 5px;
+    }
+
+    .item-content p {
+        font-size: 14px;
+        color: #65676b;
+        margin: 0;
+    }
+
+.arrow {
+    color: #65676b;
+}
+
+    .arrow svg {
+        width: 24px;
+        height: 24px;
+        stroke: currentColor;
+        fill: none;
+    }

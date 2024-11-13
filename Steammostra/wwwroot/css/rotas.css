@@ -92,13 +92,13 @@
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
-.result-item img {
-    width: 220px; /* ajuste conforme necessário */
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 20px;
-}
+    .result-item img {
+        width: 220px; /* ajustável conforme necessário */
+        height: 220px; /* ajustável conforme necessário */
+        object-fit: cover; /* mantém a proporção ao cortar */
+        border-radius: 10px;
+        margin-right: 20px;
+    }
 
 .result-item .content {
     flex-grow: 1;

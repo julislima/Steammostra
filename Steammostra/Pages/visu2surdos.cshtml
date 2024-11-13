@@ -1,0 +1,128 @@
+﻿@page
+@model Steammostra.Pages.visu2surgosModel
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="~/css/visualizar.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="~/imagens/LOGOOFC.png" alt="Logo">
+        <div class="nav-links">
+            <a href="/home">Início</a>
+            <a href="/sobre">Sobre Nós</a>
+            <a href="/perfil">Perfil</a>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <!-- Carrossel de Imagens -->
+            <div class="carousel-container">
+                <div class="carousel-images">
+                    <img src="~/imagens/ilsordo.jpeg" alt="ilsordo">
+                    <img src="~/imagens/ilsordo2.jpeg" alt="ilsordo">
+                    <img src="~/imagens/ilsordo3.jpeg" alt="ilsordo">
+                    <img src="~/imagens/ilsordo4.jpg" alt="ilsordo">
+                </div>
+                <div class="carousel-nav">
+                    <button id="prevBtn">&#10094;</button>
+                    <button id="nextBtn">&#10095;</button>
+                </div>
+            </div>
+
+            <!-- Conteúdo descritivo -->
+            <div class="text-content">
+                <h1>Gelateria il Sordo</h1>
+                <h3>
+                    Os melhores sabores de sorvete, serviço em Libras e elogiado atendimento inclusivo. Oferece outros tipos de sobremesas além de sorvetes.
+                    <ul>
+                        <li>Endereço: R. Marquês de Caravelas, 148 - Barra, Salvador - BA, 40140-240 Brazil</li>
+                        <li>Horário de funcionamento: 12:00 às 20:00</li>
+                        <li>Telefone para contato: +55(79) 3027-1258</li>
+                    </ul>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="rating">
+        <h3>Avaliações dos usuários</h3>
+        <div class="star-rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+    </div>
+
+    <div class="foot-content">
+        <div class="other-places">
+            <h2>Outros lugares</h2>
+            <div class="places">
+                <img alt="Cidade da Música" src="~/imagens/cidadedamusica.jpg" />
+                <img alt="Elevador Lacerda" src="~/imagens/lacerda.jpg" />
+            </div>
+        </div>
+
+        <div class="comments-section">
+            <h3>Comentários</h3>
+            <div class="existing-comments">
+                <p><strong>Paulo:</strong> Sorvetes gostosos e atendimento ótimo!</p>
+                <p><strong>Carol:</strong>Lugar aconchegante e com certeza tem o melhor sorvete de chocolate que já tomei!</p>
+            </div>
+
+            <div class="add-comment">
+                <h4>Deixe seu comentário:</h4>
+                <textarea name="comentario" id="comentario" rows="4" placeholder="Escreva seu comentário aqui..."></textarea>
+                <button type="submit" class="btn submit-comment">Enviar Comentário</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Script para fazer as estrelas de avaliação funcionarem -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const stars = document.querySelectorAll('.star-rating .star');
+
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    const rating = star.getAttribute('data-value');
+                    stars.forEach(s => {
+                        s.style.color = s.getAttribute('data-value') <= rating ? 'gold' : 'gray';
+                    });
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const carouselImages = document.querySelector('.carousel-images');
+            const images = document.querySelectorAll('.carousel-images img');
+            let index = 0;
+
+            document.getElementById('prevBtn').addEventListener('click', () => {
+                index = (index > 0) ? index - 1 : images.length - 1;
+                carouselImages.style.transform = `translateX(-${index * 100}%)`;
+            });
+
+            document.getElementById('nextBtn').addEventListener('click', () => {
+                index = (index < images.length - 1) ? index + 1 : 0;
+                carouselImages.style.transform = `translateX(-${index * 100}%)`;
+            });
+        });
+
+    </script>
+</body>
+
+</html>
+
